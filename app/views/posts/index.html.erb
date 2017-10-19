@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid navbar-fixed-top nav-styling">
+    <div class="collapse navbar-collapse">
+      <ul class="nav nav-pills nav-fill nav-justified">
+        <li class="nav-item">Bob Loblaw's Dog Blog</li>
+        <li class="nav-item">All Posts</li>
+        <li class="nav-item">Written By Dogs</li>
+        <li class="nav-item">Written By Humans</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron body-margin">
+  <img class="cover-header" src="ruby/classwork/intro_to_rails/dog_blog/app/assets/images/Ernie-background.jpg" alt="">
+  <div class="container text-align-center">
+    <h1 style="text-decoration:none;">Fetch</h1>
+      <p>Sit. Stay. Fetch.</p>
+  </div>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th class="col-md-2 table-header-formatting">Title</th>
+      <th class="col-md-2 table-header-formatting">Author</th>
+      <th class="col-md-5 table-header-formatting text-align-center">Blog entry</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.author %></td>
+        <td><%= post.blog_entry %></td>
+        <td class="col-md-1 text-align-center table-header-formatting"><%= link_to 'Show', post %></td>
+        <td class="col-md-1 text-align-center table-header-formatting"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="col-md-1 text-align-center table-header-formatting"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="btn btn-primary" style="color: #fff;">
+<%= link_to 'New Post', new_post_path %>
+</div>
+
+<div class="">
+  &nbsp;
+</div>

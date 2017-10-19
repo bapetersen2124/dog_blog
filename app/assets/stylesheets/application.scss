@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+nav ul {
+  margin: 5px;
+  padding: 12px;
+};
+
+.post-button {
+  padding: 10px 25px;
+  margin: 15px 5px;
+  width: 100px;
+};
+
+.comment-formatting {
+  font-size: 14px;
+  font-family: helvetica, arial;
+  color: #64686e;
+};
+
+.nav-styling {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 14px;
+  font-family: helvetica, arial;
+  color: #64686e;
+  margin-left: 35px;
+  font-weight: bolder;
+}
+
+.body-margin {
+  margin-top: 80px;
+}
+
+.table-header-formatting {
+  font-size: 15px;
+  color: #64686e;
+}
+
+.cover-header {
+  width: 100%;
+  background-image: url('/Users/brooke.petersen/Desktop/GitHub Desktop/Programs/ruby/classwork/intro_to_rails/dog_blog/app/assets/images/Ernie-background.jpg');
+  color: #fff;
+}
+
+.text-align-center {
+  text-align: center;
+}
